@@ -34,5 +34,33 @@ int main ()
 		}
 	cout<<endl;
 
-	
+	cout<<"===================================="<<endl;
+	cout<<"##      STRUK MINIMARKET 08      ##"<<endl;
+	cout<<"===================================="<<endl;
+	cout<<"No Barang Jumlah Harga Satuan SubTotal"<<endl;
+	for(int i=0;i<jumlahtotalbarang;i++){
+		cout<<setw(1)<<1+1<<" ";
+		cout<<left<<setw(12)<<namabarang[i];
+		cout<<right<<setw(15)<<jumlahbarang[i];
+		cout<<setw(18)<<hargabarang[i];
+		cout<<setw(15)<<jumlahbarang[i]*hargabarang[i]);
+	}
+	cout<<"======================================"<<endl;
+	cout<<"Total Harga : Rp. "<<totalharga<<endl<<endl;
+	cout<<"Jumlah Bayar : Rp. ";
+	cin>>jumlahbayar;
+	cout<<endl;
+
+	while(jumlahbayar-totalharga<0){
+		cout<<"Maaf, Uang Anda Kurang.Mohon Lakukan Ulang Pembayaran<<endl;
+			cout<<"Jumlah Bayar : Rp. ";
+		cin>>jumlahbayar:
+			cout<<endl;
+	}
+	cout<<"Kembalian : Rp."<<jumlahbayar-totalharga<<endl<<endl;
+	cout<<"========================================="<<endl;
+	cout<<"## TERIMA KASIH SUDAH BERBELANJA ##<<endl;
+		cout<<"========================================"<<endl;
+
+	return 0:
 }
